@@ -1,40 +1,36 @@
 import 'package:flutter/material.dart';
 
 class Search extends StatelessWidget {
+  const Search({ Key? key }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    return Column( 
-    
-      children: <Widget> [ 
-        Padding(
-          padding: const EdgeInsets.all(8.0),
-          child: Row(
-             mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              Container( 
-                decoration: BoxDecoration(
-                border: Border.all(
-                color: Colors.black,
-                width: 10,),
-                ),
-                child: Text('Where do you want to park?', style: TextStyle(fontSize: 5),),
-                
-                
-              )
-            
-
-               
-                 
-
-
-            
-            ],
-          ),
-        )
-      ]
-      );
-      
-
+    return Card( 
+      elevation: 0,
+      color: Colors.transparent,
+      child: Container( 
+        padding: EdgeInsets.all(20),
+        child: Column( 
+          children: [ 
+            Row( 
+              children: [ 
+                Expanded(child: TextField( 
+                  decoration: InputDecoration( 
+                    labelText: "Where do you want to park",
+                    border: OutlineInputBorder(
+                      borderSide: const BorderSide( color: Color.fromARGB(255, 226, 180, 30),), 
+                      borderRadius: BorderRadius.circular(5)
+                    ),
+                     
+                    suffixIcon: Icon(Icons.map, 
+                    color: Color.fromARGB(255, 209, 191, 25))
+                  ),
+                ))
+              ],
+            )
+          ],
+        ),
+      ),
+    );
   }
 }

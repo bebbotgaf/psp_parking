@@ -6,7 +6,7 @@ class SelectedLocation extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.all(30.0),
+      padding: const EdgeInsets.all(20.0),
       child: Container(
            
         child: Row(
@@ -14,14 +14,12 @@ class SelectedLocation extends StatelessWidget {
           children: [ 
             Image.asset('assets/bbb.png', height: 50.0, width: 50.0),
             SizedBox(width: 25),
-              Card(
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Text('Majlis Bandaraya Petaling', style: TextStyle(fontWeight: FontWeight.bold, fontSize: 15)),
-                     Text('Jaya', style: TextStyle(fontWeight: FontWeight.bold, fontSize: 15)),
-                  ],
-                ),
+              Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text('Majlis Bandaraya Petaling', style: TextStyle(fontWeight: FontWeight.bold, fontSize: 15, color: Colors.black)),
+                   Text('Jaya', style: TextStyle(fontWeight: FontWeight.bold, fontSize: 15,color: Colors.black)),
+                ],
               ),   
           ]),
         

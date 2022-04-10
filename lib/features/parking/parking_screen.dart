@@ -1,8 +1,11 @@
-import 'package:flutter/material.dart';
-import 'package:psp_parking/features/parking/widgets/appbar_parking.dart';
-import 'package:psp_parking/features/parking/widgets/search.dart';
+import 'dart:html';
 
-import '../payment/payment_screen.dart';
+import 'package:flutter/material.dart';
+import 'package:psp_parking/features/parking/widgets/app_bar_parking.dart';
+import 'package:psp_parking/features/parking/widgets/location.dart';
+import 'package:psp_parking/features/parking/widgets/location_1.dart';
+import 'package:psp_parking/features/parking/widgets/maps.dart';
+import 'package:psp_parking/features/parking/widgets/search.dart';
 
 
 class ParkingScreen extends StatefulWidget {
@@ -15,35 +18,26 @@ class ParkingScreen extends StatefulWidget {
 class _ParkingScreenState extends State<ParkingScreen> {
   @override
   Widget build(BuildContext context) {
-    return Column(
+    return Scaffold( 
+      body: SafeArea(child: Column(
       children: [ 
         Container(
            child: Column(
              children: [
-               appbar_parking(),
-               Search(),
-
-               GestureDetector(
-                    onTap: (){   
-                      Navigator.push(   
-                        context,
-                        MaterialPageRoute(builder: (context) => PaymentScreen())
-                      );
-                    },
-                    child: 
-                      CircleAvatar(
-                    radius: 20.0,
-                    backgroundImage:
-                      AssetImage('assets/bbb.png'),
-                    backgroundColor: Colors.transparent,
-                  ),
-
-                  ),
+               app_bar_parking(context),
+               Search(), 
+               Maps(),
+               Location(),
+               Location1()
+            
+            
              ],
            )), 
        
 
       ]
+    )
+      )
     );
   }
 }
