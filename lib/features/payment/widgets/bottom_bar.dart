@@ -2,6 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 
+import '../../home/home_screen.dart';
 import '../../parking/parking_screen.dart';
 
 class bottomNavigationBar extends StatelessWidget {
@@ -23,9 +24,15 @@ class bottomNavigationBar extends StatelessWidget {
           Column( 
             crossAxisAlignment: CrossAxisAlignment.start, 
             children: [ 
-              Text('Total payment', style: TextStyle( fontSize: 15, decoration: TextDecoration.none, color: Colors.grey.shade800)), 
-              SizedBox(height: 5), 
-              Text('RM 46.00', style: TextStyle(color: Colors.black, fontWeight: FontWeight.bold, fontSize: 10, decoration: TextDecoration.none),)
+              Padding(
+                padding: const EdgeInsets.all(4.0),
+                child: Text('Total payment', style: TextStyle( fontSize: 15, decoration: TextDecoration.none, color: Colors.grey.shade800)),
+              ), 
+             
+              Padding(
+                padding: const EdgeInsets.all(4.0),
+                child: Text('RM 46.00', style: TextStyle(color: Colors.black, fontWeight: FontWeight.bold, fontSize: 10, decoration: TextDecoration.none),),
+              )
             ],
           ), 
           SizedBox(width: 70),
@@ -67,7 +74,7 @@ void showAlertDialog(BuildContext context) {
        (child: Text("Yes"), 
        onPressed: () { 
          Navigator.push(context, 
-         MaterialPageRoute(builder: (context) => const ParkingScreen()));
+         MaterialPageRoute(builder: (context) => HomeScreen()));
         showSecond(context);
        }, 
        )
