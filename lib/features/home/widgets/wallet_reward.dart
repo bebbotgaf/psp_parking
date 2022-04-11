@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:psp_parking/features/home/widgets/reward.dart';
-import 'package:psp_parking/features/home/widgets/wallet.dart';
+import 'package:psp_parking/features/home/widgets/rewards.dart';
+import 'package:psp_parking/features/home/widgets/wallet_amt.dart';
 
 class WalletReward extends StatelessWidget {
 

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:psp_parking/features/payment/widgets/counter.dart';
 
 
 class ParkingDuration extends StatelessWidget {
@@ -7,7 +8,7 @@ class ParkingDuration extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.all(20.0),
+      padding: const EdgeInsets.all(15.0),
       child: Column(
         children: [
           Row(
@@ -17,7 +18,7 @@ class ParkingDuration extends StatelessWidget {
                   style:
                       TextStyle(fontWeight: FontWeight.bold, fontSize: 20, color: Colors.black)),
               SizedBox(width: 80),
-              Text('RM0.40 per hour)',
+              Text('(RM0.40 per hour)',
                   style:
                       TextStyle(fontWeight: FontWeight.bold, fontSize: 10, color: Colors.black)),
               SizedBox(height: 30),
@@ -91,59 +92,8 @@ class ParkingDuration extends StatelessWidget {
             children: [
               Padding(
                 padding: const EdgeInsets.all(8.0),
-                child: Container(
-                  child: FlatButton(
-                    child: Padding(
-                      padding: const EdgeInsets.all(10.0),
-                      child: Text(
-                        '6 Hours',
-                        style: TextStyle(fontSize: 12.0),
-                      ),
-                    ),
-                    color: Color.fromARGB(255, 218, 218, 218),
-                    onPressed: () {},
-                  ),
-                ),
+                child: CounterButton()
               ),
-              Padding(
-                padding: const EdgeInsets.all(8.0),
-                child: SizedBox(
-                  
-                  width: 40,
-                  child: FlatButton(
-                    child: Padding(
-                      padding: const EdgeInsets.all(10.0),
-                      child: Text(
-                        '+',
-                        style: TextStyle(fontSize: 15.0, color: Colors.black),
-                      ),
-                    ),
-                    color: Color.fromARGB(255, 162, 161, 161),
-                    onPressed: () {},
-                  ),
-                ),
-              ),
-             Padding(
-                  padding: const EdgeInsets.all(8.0),
-                  child: SizedBox(
-                    width: 40,
-                    child: FlatButton(
-                      
-                      child: Padding(
-                        padding: const EdgeInsets.all(10.0),
-                        child: 
-      
-                        Text(
-                          '-',
-                          style: TextStyle(fontSize: 15.0),
-                        ),
-                      ),
-                      color: Color.fromARGB(255, 162, 161, 161),
-                      onPressed: () {},
-                    ),
-                  ),
-                ),
-              
             ],
           ),
           Padding(padding: const EdgeInsets.all(20.0),

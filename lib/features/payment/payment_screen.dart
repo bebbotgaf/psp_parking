@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:psp_parking/features/payment/widgets/appbar_payment.dart';
+import 'package:psp_parking/features/payment/widgets/app_bar_payment.dart';
 import 'package:psp_parking/features/payment/widgets/bottom_bar.dart';
 import 'package:psp_parking/features/payment/widgets/parking_duration.dart';
 import 'package:psp_parking/features/payment/widgets/promo_code.dart';

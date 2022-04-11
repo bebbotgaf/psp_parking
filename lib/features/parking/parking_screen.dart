@@ -3,7 +3,7 @@ import 'dart:html';
 import 'package:flutter/material.dart';
 import 'package:psp_parking/features/parking/widgets/app_bar_parking.dart';
 import 'package:psp_parking/features/parking/widgets/location.dart';
-import 'package:psp_parking/features/parking/widgets/location_1.dart';
+import 'package:psp_parking/features/parking/widgets/location1.dart';
 import 'package:psp_parking/features/parking/widgets/maps.dart';
 import 'package:psp_parking/features/parking/widgets/search.dart';
 
