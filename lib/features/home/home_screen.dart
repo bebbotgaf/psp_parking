@@ -34,7 +34,7 @@ class HomeScreen extends StatelessWidget {
             ),
     
         ),
-        persistentFooterButtons: [NavBar(), ]
+        //persistentFooterButtons: [NavBar(), ]
       ),
     );
   }
