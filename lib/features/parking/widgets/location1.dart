@@ -18,7 +18,7 @@ class Location1 extends StatelessWidget {
                 child: Row(
                 mainAxisSize: MainAxisSize.min,
                   children: <Widget>[
-                    Image.asset('assets/bbb.png', height: 70, width: 80),
+                    Image.asset('assets/mbpj.png', height: 70, width: 80),
                       Row(
                         children: [
                           Column(

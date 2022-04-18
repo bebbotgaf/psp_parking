@@ -12,7 +12,7 @@ class SelectedLocation extends StatelessWidget {
         child: Row(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [ 
-            Image.asset('assets/bbb.png', height: 50.0, width: 50.0),
+            Image.asset('assets/mbpj.png', height: 50.0, width: 50.0),
             SizedBox(width: 25),
               Column(
                 crossAxisAlignment: CrossAxisAlignment.start,

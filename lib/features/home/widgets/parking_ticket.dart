@@ -19,7 +19,7 @@ class ParkingTicket extends StatelessWidget {
                   mainAxisSize: MainAxisSize.min,
         children: <Widget>[
        
-              Image.asset('assets/bbb.png', height: 70.0, width: 80.0),
+              Image.asset('assets/parktic.png', height: 70.0, width: 80.0),
               Expanded(
                 child: Row(  
                   children: [

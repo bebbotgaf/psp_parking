@@ -20,7 +20,7 @@ class News extends StatelessWidget {
                   mainAxisSize: MainAxisSize.min,
         children: <Widget>[
        
-              Image.asset('assets/bbb.png', height: 70.0, width: 80.0),
+              Image.asset('assets/home1.ico', height: 70.0, width: 80.0),
               Row(
                 children: [
                   Column(

@@ -21,7 +21,7 @@ class Maps extends StatelessWidget {
               height: 200, 
               child: new ClipRRect( 
                 borderRadius: BorderRadius.circular(50), 
-                child: new Image.asset('bbb.png'),
+                child: new Image.asset('maps1.png'),
                 
               ),
               ),

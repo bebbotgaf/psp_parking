@@ -59,19 +59,8 @@ flutter:
 
   # To add assets to your application, add an assets section, like this:
   assets:
-     - assets/aaa.png
-     - assets/bbb.png
-     - assets/ccc.png
-     - assets/wallet.webp
-     - assets/ddd.png
-     - assets/eee.jpeg
-     - assets/fff.webp
-     - assets/ggg.png
-     - assets/kereta.jpg
-     - assets/car.png
-     - assets/police.jpg
-     - assets/carpark.jpg
-     - assets/park.png
+     - assets/
+     - assets/officer.ico
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.

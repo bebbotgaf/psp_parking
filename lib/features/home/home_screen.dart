@@ -19,7 +19,8 @@ class HomeScreen extends StatelessWidget {
       home: Scaffold(  
         appBar: 
           appbar_home( title:'SmartParking'),
-        body: SafeArea(
+        body: 
+        SafeArea(
           child: 
             Column(
               children: [
@@ -28,18 +29,14 @@ class HomeScreen extends StatelessWidget {
                 Services(),
                 News(),
                 ParkingTicket(),
-        
               ],
                
             ),
-
-
-
-
-          
+    
         ),
-        bottomNavigationBar: bottomnavbar_home(),
+        persistentFooterButtons: [NavBar(), ]
       ),
     );
   }
 }
+
